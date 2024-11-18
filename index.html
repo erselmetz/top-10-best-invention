@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Top 10 Best Invention</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <script>
+        function adjustLayout() {
+            if (window.innerWidth < 768) { // Adjust breakpoint as needed
+                alert("screen too small for frameset")
+                alert("Please view this page on a larger screen for the best experience.")
+            }
+        }
+        window.addEventListener('resize', adjustLayout);
+        window.addEventListener('load', adjustLayout);
+    </script>
+</head>
+
+<frameset rows="10%,*" id="frames">
+    <frame src="./frame/header.html" name="header">
+        <frameset cols="20%,*">
+            <frame src="./frame/sidebar.html" name="sidebar">
+                <frame src="./page/home.html" name="main">
+        </frameset>
+</frameset>
+</html>

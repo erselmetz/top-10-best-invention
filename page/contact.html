@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        /* Dark Mode Theme */
+        :root {
+            --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            --heading-font: "Raleway", sans-serif;
+            --nav-font: "Poppins", sans-serif;
+
+            --background-color: #121212; /* Dark background color */
+            --default-color: #e0e0e0; /* Lighter text color */
+            --heading-color: #ffffff; /* Heading color */
+            --accent-color: #cc1616; /* Accent color */
+            --surface-color: #1e1e1e; /* Surface color for cards */
+            --contrast-color: #f1f1f1; /* Contrast color for readability */
+        }
+
+        body {
+            font-family: var(--default-font);
+            background-color: var(--background-color);
+            color: var(--default-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            color: var(--heading-color);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: var(--heading-font);
+            font-size: 2.5rem;
+        }
+
+        .content {
+            margin: 30px;
+            padding: 20px;
+            background-color: var(--surface-color);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .content h2 {
+            color: var(--heading-color);
+            font-family: var(--heading-font);
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            background-color: var(--surface-color);
+            color: var(--default-color);
+            border: 1px solid var(--accent-color);
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: var(--accent-color);
+            color: var(--contrast-color);
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #e60000;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <p>If you have any questions or comments, feel free to reach out!</p>
+    </header>
+
+    <div class="content">
+        <h2>Get in Touch</h2>
+        
+        <form class="contact-form" action="your-backend-script.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required placeholder="Enter your message" rows="5"></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+
+        <a href="../page/home.html" target="main" class="back-link">Back to Top 10 Best Inventions</a>
+    </div>
+</body>
+</html>
