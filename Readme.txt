@@ -15,7 +15,7 @@ This project was created as a **school assignment** to demonstrate the use of fr
 
 ## Live Demo
 Visit the project live at:  
-[https://erselmetz.github.io/top-10-best-invention/](https://erselmetz.github.io/top-10-best-invention/)
+https://erselmetz.github.io/top-10-best-invention
 
 ## License
 This project is licensed under the **MIT License**.  
