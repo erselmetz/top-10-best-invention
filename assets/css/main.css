@@ -1,22 +1,14 @@
-/* Fonts */
-:root {
-  --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway", sans-serif;
-  --nav-font: "Poppins", sans-serif;
-}
-
-/* Dark Mode Theme */
 :root {
   --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway", sans-serif;
   --nav-font: "Poppins", sans-serif;
 
-  --background-color: #121212; /* Dark background color */
-  --default-color: #e0e0e0; /* Lighter text color */
-  --heading-color: #ffffff; /* Heading color */
-  --accent-color: #cc1616; /* Accent color */
-  --surface-color: #1e1e1e; /* Surface color for cards */
-  --contrast-color: #f1f1f1; /* Contrast color for readability */
+  --background-color: #121212;
+  --default-color: #e0e0e0;
+  --heading-color: #ffffff;
+  --accent-color: #cc1616;
+  --surface-color: #1e1e1e;
+  --contrast-color: #f1f1f1;
 }
 
 body {
@@ -85,35 +77,27 @@ header h1 {
 
 .e-button {
   background-color: #444;
-  /* Medium gray */
   color: #f1f1f1;
   border: none;
 }
 
 .e-button:hover {
   background-color: #555;
-  /* Slightly lighter gray on hover */
   color: #fff;
-  /* Ensure high contrast on hover */
 }
 
 h2 {
   color: #f1f1f1;
-  /* White text for headings */
 }
 
 #cards {
   background-color: #2b2b2b;
-  /* Slightly lighter than the body */
   padding: 50px 0;
-  /* Top and bottom spacing */
 }
 
 #cards .card {
   background-color: #ffffff;
-  /* Light card background for contrast */
   color: #333;
-  /* Dark text for readability */
   padding: 20px;
   margin: 15px 0;
   border-radius: 10px;
@@ -124,7 +108,6 @@ h2 {
 
 #cards .card:hover {
   transform: scale(1.05);
-  /* Subtle zoom effect */
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -140,19 +123,26 @@ h2 {
   font-size: 1.8em;
   font-weight: bold;
   color: #ff6f00;
-  /* Orange for numbering */
 }
 
 #cards h4 {
   margin-top: 10px;
   font-size: 1.5em;
   color: #222;
-  /* Darker title for contrast */
 }
 
 #cards p {
   font-size: 1.1em;
   line-height: 1.6;
-  color: #444;
-  /* Lighter text for readability */
+  color: #fff;
+}
+
+a{text-decoration: none;}
+
+.hero-bg{
+  width: 100%;
+  height: 400px;
+  background-image: url("../img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
