@@ -146,3 +146,46 @@ a{text-decoration: none;}
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.team-member {
+  background-color: var(--surface-color);
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  width: 250px;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid var(--accent-color);
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  color: var(--heading-color);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 1.2rem;
+  color: var(--default-color);
+}
+
+.about-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  margin: 0 auto;
+  display: block;
+}
